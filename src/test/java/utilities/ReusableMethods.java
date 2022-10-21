@@ -196,4 +196,10 @@ public class ReusableMethods {
         jse.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
+    public static Select selectMethod(WebElement select){
+        Select select1=new Select(select);
+
+        return select1;
+    }
+
 }

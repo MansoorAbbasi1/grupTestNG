@@ -298,6 +298,37 @@ public class AlloverPage {
     @FindBy(xpath = "//*[@class='wcfm-checkbox wcfm_ele simple variable non-job_package non-resume_package non-auction non-redq_rental non-appointment non-accommodation-booking']")
     public WebElement soldIndividually;
 
+    @FindBy (xpath = "//select[@id='stock_status']")
+    public WebElement backorder;
+
+    @FindBy (xpath = "//*[@class='icon-box-title text-normal']")
+    public WebElement orderText;
+
+    @FindBy (xpath = "//thead//tr//th")
+    public List<WebElement> orderHeaderList;
+
+
+    @FindBy (xpath = "//*[text()='No downloads available yet.']")
+    public WebElement noDownloadText;
+
+    @FindBy (xpath = "//*[text()='Billing address']")
+    public WebElement billingAddressText;
+
+    @FindBy (xpath = "//*[text()='Shipping address']")
+    public WebElement shippingAddressText;
+
+    @FindBy (xpath = "//*[text()='Account Details']")
+    public WebElement accountDetailsText;
+
+   @FindBy (xpath = "//*[text()='Account details changed successfully.']")
+    public WebElement succesfully;
+
+
+
+
+
+
+
 
 
 
