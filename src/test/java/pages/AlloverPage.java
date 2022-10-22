@@ -337,6 +337,18 @@ public class AlloverPage {
     })
     public List<WebElement> customerTableHeads;
 
+@FindAll({
+        @FindBy (xpath = "//*[text()='PDF']"),
+
+
+        @FindBy (xpath = "//*[text()='Excel']"),
+
+
+        @FindBy (xpath = "//*[text()='CSV']")
+
+})
+ public List<WebElement> pdfExcelCSV;
+
 
 
 
