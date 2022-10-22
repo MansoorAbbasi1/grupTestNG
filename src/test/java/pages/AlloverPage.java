@@ -324,6 +324,18 @@ public class AlloverPage {
     public WebElement succesfully;
 
 
+    @FindBy (xpath = "(//*[@class='text'])[7]")
+    public WebElement customersButton;
+
+
+    @FindAll({
+            @FindBy (xpath = "//thead//tr//th[1]"),
+            @FindBy (xpath = "//thead//tr//th[2]"),
+            @FindBy (xpath = "//thead//tr//th[3]"),
+            @FindBy (xpath = "//thead//tr//th[4]"),
+            @FindBy (xpath = "//thead//tr//th[6]")
+    })
+    public List<WebElement> customerTableHeads;
 
 
 
@@ -333,7 +345,10 @@ public class AlloverPage {
 
 
 
-//input[@id='stock_qty']
+
+
+
+
 
 
 
