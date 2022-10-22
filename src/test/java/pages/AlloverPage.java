@@ -351,6 +351,81 @@ public class AlloverPage {
 
 
 
+    @FindBy (xpath = "(//*[text()='Add New'])[1]")
+    public WebElement customersAddNew;
+
+
+
+    @FindBy(xpath = "//*[@id='user_name']")
+    public WebElement customerUserName;
+
+    @FindBy(xpath = "//*[@id='user_email']")
+    public WebElement customerUserEmail;
+
+    @FindBy(xpath = "//*[@id='first_name']")
+    public WebElement customerFirstName;
+
+    @FindBy(xpath = "//*[@id='last_name']")
+    public WebElement customerLastName;
+
+    // Customer Billing location
+
+    @FindAll({
+            @FindBy(xpath = "//*[@id='bfirst_name']"),
+
+            @FindBy(xpath = " //*[@id='blast_name']"),
+
+            @FindBy(xpath = "//*[@id='bcompany_name']"),
+
+            @FindBy(xpath = "//*[@id='bphone']"),
+
+            @FindBy(xpath = "//*[@id='baddr_1']"),
+
+            @FindBy(xpath = "//*[@id='baddr_2']"),
+
+            @FindBy(xpath = "//*[@id='bcity']"),
+
+            @FindBy(xpath = "//*[@id='bstate']"),
+
+            @FindBy(xpath = "//*[@id='bzip']")
+
+    })
+    public List<WebElement> customerBillingList;
+
+
+    @FindBy(xpath = "//*[@id='bcountry']")
+    public WebElement customerBillingCountry;
+
+
+    @FindBy(xpath = "//*[@id='same_as_billing']")
+    public WebElement customerSameasBillingButton;
+
+    @FindAll({
+            @FindBy(xpath = "//*[@id='sfirst_name']"),
+
+            @FindBy(xpath = " //*[@id='slast_name']"),
+
+            @FindBy(xpath = "//*[@id='scompany_name']"),
+
+            @FindBy(xpath = "//*[@id='saddr_1']"),
+
+            @FindBy(xpath = "//*[@id='saddr_2']"),
+
+            @FindBy(xpath = "//*[@id='scity']"),
+
+            @FindBy(xpath = "//*[@id='sstate']"),
+
+            @FindBy(xpath = "//*[@id='szip']")
+
+    })
+    public List<WebElement> customerShippingList;
+
+    @FindBy(xpath = "//*[@id='scountry']")
+    public WebElement customerShippingCountry;
+
+
+    @FindBy(xpath = "//*[@id='wcfm_customer_submit_button']")
+    public WebElement customerSubmitButton;
 
 
 
@@ -370,15 +445,7 @@ public class AlloverPage {
 
 
 
-
-
-
-
-
-
-
-
-
+    //*[@id='blast_name']
 
 
 
