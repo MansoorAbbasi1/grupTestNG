@@ -437,9 +437,28 @@ public class AlloverPage {
     public WebElement refundOrderId;
 
 
+    @FindAll({
+            @FindBy (xpath = "//thead//tr//th[5]"),
+
+            @FindBy (xpath = "//thead//tr//th[6]")
+
+    })
+    public List<WebElement> refundTypeReason;
 
 
+    @FindBy (xpath = "(//*[@class='text'])[11]")
+    public WebElement followersButton;
 
+    @FindAll({
+            @FindBy (xpath = "//thead//tr/th[1]"),
+
+            @FindBy (xpath = "//thead//tr/th[2]")
+
+    })
+    public List<WebElement> followersNameEmail;
+
+    @FindBy (xpath = "//thead//tr/th[3]")
+    public WebElement followersActions;
 
 
 
