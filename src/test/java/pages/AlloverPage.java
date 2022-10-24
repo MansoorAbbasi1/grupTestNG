@@ -427,25 +427,17 @@ public class AlloverPage {
     @FindBy(xpath = "//*[@id='wcfm_customer_submit_button']")
     public WebElement customerSubmitButton;
 
+    @FindBy (xpath = "(//*[@class='text'])[8]")
+    public WebElement refundButton;
+
+    @FindBy (xpath = "//thead//tr//th[2]")
+    public WebElement refundRequestId;
+
+    @FindBy (xpath = "//thead//tr//th[3]")
+    public WebElement refundOrderId;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //*[@id='blast_name']
 
 
 
